@@ -15,5 +15,4 @@
 
 const Route = use('Route')
 
-Route.on('/').render('welcome')
-Route.get('/app', ({ view }) => view.render('chat'))
+Route.get('/', ({ view }) => view.render('chat'))
